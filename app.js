@@ -8,7 +8,6 @@ const cors = require('cors')
 
 // app.use(logger());
 app.use(cors());
-app.options("", cors(corsConfig));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/public', express.static(path.join(__dirname, 'uploads')));
